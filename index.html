@@ -9,16 +9,6 @@
 </head>
 
 <style> 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-*, *::after, *::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
-
-*:hover {
-  cursor: default; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,14 +39,6 @@ footer, header, hgroup, menu, nav, section {
 
 ol, ul {
   list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
 
 table {
   border-collapse: collapse;
@@ -139,8 +121,8 @@ body {
   .slideImg {
     display: block;
     width: 100%; }
-  .slideContent1 {
-    opacity: 1;
+
+  .slideContent {
     position: absolute;
     left: 0;
     right: 0;
@@ -160,26 +142,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column; }
 
-    .slideContent2 {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 50%;
-    -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-            transform: translateY(50%);
-    max-width: 80%;
-    text-shadow: 0px 0px 4px #000000;
-    color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
 
     .slideTitle {
       font-size: 4rem;
@@ -255,14 +217,14 @@ border:1px solid white;
         <div id="wrapper" class="slides-wrapper">
             <div id="slide" class="slide" data-slide-id="0">
                 <img class="slideImg" src="https://images.unsplash.com/photo-1510279770292-4b34de9f5c23?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="slider-0">
-                <div class="slideContent1">
+                <div class="slideContent">
                     <span id="sliderText" class="slideTitle">Slider1</span>
                     <span class="slideText">Text1</span>
                 </div>
             </div>
             <div id="slide" class="slide" data-slide-id="1">
                 <img class="slideImg" src="https://images.unsplash.com/photo-1489532060612-9910b757430f?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="slider-1">
-                <div class="slideContent2">
+                <div class="slideContent">
                     <span id="sliderText" class="slideTitle">Slider2</span>
                     <span class="slideText">Text 2</span>
                 </div>
